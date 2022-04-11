@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS Files -->
+
+    <link rel="stylesheet" href="styles.css" />
+    <!-- CSS Files -->
+
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts Links -->
+
+    <title>Log in page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="rect shape--1">&empty;</div>
+      <div class="rect shape--2">&empty;</div>
+      <div class="rect shape--3">&empty;</div>
+
+      <div class="main-content">
+        <h1 class="heading-1 mr-md">Login</h1>
+
+        <form class="login-form">
+          <div class="label-input-group">
+            <label for="fname" class="form-label">Username</label>
+
+            <div class="input-container">
+              <svg class="icon-form-input">
+                <use xlink:href="/imgs/sprite.svg#icon-user-outline"></use>
+              </svg>
+
+              <input
+                type="text"
+                id="uname"
+                name="username"
+                class="form-input"
+                placeholder="Type your name"
+              />
+            </div>
+          </div>
+
+          <div class="label-input-group">
+            <label for="pass" class="form-label">Password</label>
+
+            <div class="input-container">
+              <svg class="icon-form-input">
+                <use
+                  xlink:href="/imgs/sprite.svg#icon-lock-closed-outline"
+                ></use>
+              </svg>
+
+              <input
+                type="password"
+                id="pass"
+                name="password"
+                class="form-input"
+                placeholder="Type your password"
+              />
+            </div>
+          </div>
+
+          <a class="forgot-message" href="#">Forgot password?</a>
+
+          <input type="submit" value="Login" class="submit-btn" />
+        </form>
+
+        <p class="para-text">Or sign up using</p>
+
+        <ul class="form-list">
+          <li class="form-list-item">
+            <svg class="icon">
+              <use xlink:href="/imgs/sprite.svg#icon-facebook"></use>
+            </svg>
+          </li>
+
+          <li class="form-list-item">
+            <svg class="icon">
+              <use xlink:href="/imgs/sprite.svg#icon-twitter"></use>
+            </svg>
+          </li>
+
+          <li class="form-list-item">
+            <svg class="icon">
+              <use xlink:href="/imgs/sprite.svg#icon-google"></use>
+            </svg>
+          </li>
+        </ul>
+
+        <div class="text-bot">
+          <p class="para-text para-text-bot">Or sign up using</p>
+          <a class="signup-message" href="#">Sign up</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

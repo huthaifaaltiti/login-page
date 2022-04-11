@@ -1,0 +1,279 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+:root {
+  --color-primary-2: #62d7dd;
+  --color-primary-light-1: #72dbe0;
+  --color-primary-light-2: #91e3e7;
+  --color-primary-dark-1: #58c2c7;
+  --color-primary-dark-2: #45979b;
+  
+  --color-primary-1: #e938f8;
+  --color-primary-light-3: #ed60f9;
+  --color-primary-light-4: #f074fa;
+  --color-primary-dark-3: #ba2dc6;
+  --color-primary-dark-4: #a327ae;
+
+  --color-grey-light-1: #e9ecef;
+  --color-grey-light-2: #dee2e6;
+
+  --color-grey-dark-1: #999;
+  --color-grey-dark-2: #777;
+
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light-1: 0 10px 6px -6px rgba(0, 0, 0, 0.3);
+  --shadow-light-2: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  --shadow-light-3: 0 1rem 2rem rgba(0, 0, 0, 0.02);
+
+  --font-primary: "Be Vietnam Pro", sans-serif;
+  --font-display-1: "Comfortaa", Display;
+}
+
+body {
+  font-family: var(--font-primary);
+
+  background-image: linear-gradient(
+    to right top,
+    var(--color-primary-2),
+    var(--color-primary-1)
+  );
+  background-repeat: no-repeat;
+
+  height: 100%;
+  width: 100%;
+}
+
+/* SECTOR */
+/* General */
+
+.heading-1 {
+  color: #000;
+  text-align: center;
+
+  padding: 4rem;
+
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.para-text {
+  color: var(--color-grey-dark-2);
+
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* SECTOR */
+/* Main */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.rect {
+  background-color: #fff;
+  border-radius: 9px;
+  opacity: 0.1;
+
+  width: 40%;
+  height: 50%;
+}
+
+.shape--1 {
+  transform: rotate(45deg);
+
+  position: absolute;
+  left: -45rem;
+  top: -10rem;
+}
+
+.shape--2 {
+  transform: rotate(-35deg);
+
+  position: absolute;
+  left: 10rem;
+  bottom: -25rem;
+}
+
+.shape--3 {
+  transform: rotate(242deg);
+
+  position: absolute;
+  right: -40rem;
+  top: 25rem;
+
+  background-color: var(--color-grey-dark-2);
+  opacity: 0.2;
+}
+
+.main-content {
+  background-color: #fff;
+
+  width: 25%;
+  height: 80%;
+  border-radius: 7px;
+
+  margin: 8rem auto;
+}
+
+.login-form {
+  margin: 5rem;
+  margin-top: 1rem;
+}
+
+.form-label {
+  color: var(--color-grey-dark-1);
+  display: block;
+  font-size: 1.3rem;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-bottom: 1px solid var(--color-grey-dark-1);
+  padding: 1rem;
+
+  padding-left: 2rem;
+}
+
+.form-input::placeholder {
+  color: var(--color-grey-dark-1);
+  font-size: 1.2rem;
+}
+
+.label-input-group {
+  padding-bottom: 2rem;
+}
+
+.icon-form-input {
+  fill: var(--color-grey-dark-1);
+  width: 6%;
+  height: 60%;
+
+  margin-left: 1rem;
+
+  position: absolute;
+  top: 0.5rem;
+  left: -1rem;
+}
+
+.input-container {
+  position: relative;
+}
+
+.forgot-message:link,
+.forgot-message:visited {
+  display: block;
+  font-weight: 300;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--color-grey-dark-1);
+
+  float: right;
+  cursor: pointer;
+}
+.forgot-message:hover,
+.forgot-message:active {
+  color: var(--color-grey-dark-2);
+  text-decoration: underline;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    var(--color-primary-2),
+    var(--color-primary-1)
+  );
+  color: #fff;
+
+  border: none;
+  border-radius: 30px;
+
+  padding: 1.2rem 1.4rem;
+  margin: 4rem 0;
+
+  transition: all 0.2s;
+}
+
+.submit-btn:hover {
+  transform: scale(1.1);
+}
+
+.form-list {
+  width: 30%;
+  list-style: none;
+  text-align: center;
+
+  margin: 2rem auto;
+
+  display: flex;
+}
+
+.form-list-item {
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.05);
+}
+
+.text-bot {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+
+  margin-bottom: 2rem;
+}
+
+.para-text-bot {
+  padding: 1rem;
+}
+
+.main-content {
+  position: relative;
+}
+
+.signup-message:link,
+.signup-message:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-grey-dark-1);
+}
+
+.signup-message:hover,
+.signup-message:active {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-grey-dark-1);
+  text-decoration: underline;
+  cursor: pointer;
+}
